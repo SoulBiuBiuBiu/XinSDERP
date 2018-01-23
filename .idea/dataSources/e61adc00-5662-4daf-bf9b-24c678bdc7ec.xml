@@ -1,0 +1,1251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="xinsd@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="xinsd">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="db_example"/>
+    <schema id="4" parent="1" name="information_schema"/>
+    <schema id="5" parent="1" name="jxxt"/>
+    <schema id="6" parent="1" name="learn"/>
+    <schema id="7" parent="1" name="mysql"/>
+    <schema id="8" parent="1" name="performance_schema"/>
+    <schema id="9" parent="1" name="sys"/>
+    <schema id="10" parent="1" name="test"/>
+    <schema id="11" parent="1" name="xinsderp"/>
+    <table id="12" parent="2" name="bbgl"/>
+    <table id="13" parent="2" name="bcck"/>
+    <table id="14" parent="2" name="bclb"/>
+    <table id="15" parent="2" name="bcpck"/>
+    <table id="16" parent="2" name="bcplb"/>
+    <table id="17" parent="2" name="bom"/>
+    <table id="18" parent="2" name="cpck"/>
+    <table id="19" parent="2" name="cplb"/>
+    <table id="20" parent="2" name="dd"/>
+    <table id="21" parent="2" name="dd_cplb"/>
+    <table id="22" parent="2" name="dm"/>
+    <table id="23" parent="2" name="dw"/>
+    <table id="24" parent="2" name="functions"/>
+    <table id="25" parent="2" name="gk"/>
+    <table id="26" parent="2" name="jsgl"/>
+    <table id="27" parent="2" name="jssq"/>
+    <table id="28" parent="2" name="lc">
+      <Comment>流程</Comment>
+    </table>
+    <table id="29" parent="2" name="lcgl"/>
+    <table id="30" parent="2" name="mjck"/>
+    <table id="31" parent="2" name="mjlb"/>
+    <table id="32" parent="2" name="roles"/>
+    <table id="33" parent="2" name="rolesfunctions"/>
+    <table id="34" parent="2" name="rolesusers"/>
+    <table id="35" parent="2" name="t"/>
+    <table id="36" parent="2" name="tjbbsz"/>
+    <table id="37" parent="2" name="user"/>
+    <table id="38" parent="2" name="ylck"/>
+    <table id="39" parent="2" name="yllb"/>
+    <column id="40" parent="12" name="ID">
+      <Position>1</Position>
+      <DataType>int(11) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="41" parent="12" name="MC">
+      <Position>2</Position>
+      <DataType>varchar(40)|0</DataType>
+    </column>
+    <column id="42" parent="12" name="GS">
+      <Position>3</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="43" parent="12" name="LX">
+      <Position>4</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="44" parent="12" name="CONTENT">
+      <Position>5</Position>
+      <DataType>longblob|0</DataType>
+    </column>
+    <column id="45" parent="12" name="CZYBH">
+      <Position>6</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="46" parent="12" name="BMBH">
+      <Position>7</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="47" parent="12" name="JBBH">
+      <Position>8</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="48" parent="12" name="CZSJ">
+      <Position>9</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="49" parent="12" name="DURL">
+      <Position>10</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <key id="50" parent="12" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="51" parent="13" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="52" parent="13" name="bc_id">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="53" parent="13" name="bs">
+      <Position>3</Position>
+      <DataType>tinyint(1)|0</DataType>
+    </column>
+    <column id="54" parent="13" name="zl">
+      <Position>4</Position>
+      <DataType>decimal(15)|0</DataType>
+    </column>
+    <column id="55" parent="13" name="sl">
+      <Position>5</Position>
+      <DataType>decimal(15)|0</DataType>
+    </column>
+    <column id="56" parent="13" name="rq">
+      <Position>6</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="57" parent="13" name="dh">
+      <Position>7</Position>
+      <DataType>varchar(15)|0</DataType>
+    </column>
+    <column id="58" parent="13" name="wz">
+      <Position>8</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="59" parent="13" name="czy">
+      <Position>9</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="60" parent="13" name="bh">
+      <Position>10</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <index id="61" parent="13" name="FKo0196pvtcqeb2o81c34m0ev1p">
+      <ColNames>bc_id</ColNames>
+    </index>
+    <key id="62" parent="13" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="63" parent="13" name="FK4hlla04vg3o444rvybakfv8mc">
+      <ColNames>bc_id</ColNames>
+      <RefSchemaName>xinsd</RefSchemaName>
+      <RefTableName>bclb</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="64" parent="13" name="FKo0196pvtcqeb2o81c34m0ev1p">
+      <ColNames>bc_id</ColNames>
+      <RefSchemaName>xinsd</RefSchemaName>
+      <RefTableName>bclb</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="65" parent="14" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="66" parent="14" name="bcgg">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="67" parent="14" name="bcmz">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="68" parent="14" name="rl">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="69" parent="14" name="dw_id">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="70" parent="14" name="FKmjpwnldq5sb4d4i3g3167r4cy">
+      <ColNames>dw_id</ColNames>
+    </index>
+    <key id="71" parent="14" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="72" parent="14" name="FKmjpwnldq5sb4d4i3g3167r4cy">
+      <ColNames>dw_id</ColNames>
+      <RefSchemaName>xinsd</RefSchemaName>
+      <RefTableName>dw</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="73" parent="15" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="74" parent="15" name="bcplh">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="75" parent="15" name="bcpqzz">
+      <Position>3</Position>
+      <DataType>double|0</DataType>
+    </column>
+    <column id="76" parent="15" name="bs">
+      <Position>4</Position>
+      <DataType>tinyint(1)|0</DataType>
+    </column>
+    <column id="77" parent="15" name="zl">
+      <Position>5</Position>
+      <DataType>decimal(15)|0</DataType>
+    </column>
+    <column id="78" parent="15" name="sl">
+      <Position>6</Position>
+      <DataType>decimal(15)|0</DataType>
+    </column>
+    <column id="79" parent="15" name="rq">
+      <Position>7</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="80" parent="15" name="wz">
+      <Position>8</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="81" parent="15" name="dh">
+      <Position>9</Position>
+      <DataType>varchar(15)|0</DataType>
+    </column>
+    <column id="82" parent="15" name="bcptb">
+      <Position>10</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="83" parent="15" name="bcpth">
+      <Position>11</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="84" parent="15" name="bcpzz">
+      <Position>12</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="85" parent="15" name="czy">
+      <Position>13</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="86" parent="15" name="bcplb_id">
+      <Position>14</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="87" parent="15" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="88" parent="16" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="89" parent="16" name="bcpcz">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="90" parent="16" name="bcpgg">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="91" parent="16" name="bcplx">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="92" parent="16" name="bcpmz">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="93" parent="16" name="dw_id">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="94" parent="16" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="95" parent="17" name="cpl_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="96" parent="17" name="mj_id">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="97" parent="17" name="sl">
+      <Position>3</Position>
+      <DataType>char(10)|0</DataType>
+    </column>
+    <index id="98" parent="17" name="FK5trgtip6hf2y0y40rif3f9rpl">
+      <ColNames>mj_id</ColNames>
+    </index>
+    <index id="99" parent="17" name="FKo8wmtnumdld8yfk62erjo9qkx">
+      <ColNames>cpl_id</ColNames>
+    </index>
+    <foreign-key id="100" parent="17" name="FK_Reference_25">
+      <ColNames>cpl_id</ColNames>
+      <RefSchemaName>xinsd</RefSchemaName>
+      <RefTableName>cplb</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="101" parent="17" name="FKo8wmtnumdld8yfk62erjo9qkx">
+      <ColNames>cpl_id</ColNames>
+      <RefSchemaName>xinsd</RefSchemaName>
+      <RefTableName>cplb</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="102" parent="17" name="FK5trgtip6hf2y0y40rif3f9rpl">
+      <ColNames>mj_id</ColNames>
+      <RefSchemaName>xinsd</RefSchemaName>
+      <RefTableName>mjlb</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="103" parent="17" name="FK_Reference_26">
+      <ColNames>mj_id</ColNames>
+      <RefSchemaName>xinsd</RefSchemaName>
+      <RefTableName>mjlb</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="104" parent="18" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="105" parent="18" name="cpsl">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="106" parent="18" name="cpth">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="107" parent="18" name="cpzl">
+      <Position>4</Position>
+      <DataType>double|0</DataType>
+    </column>
+    <column id="108" parent="18" name="rkrq">
+      <Position>5</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="109" parent="18" name="cpid">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="110" parent="18" name="bs">
+      <Position>7</Position>
+      <DataType>bit(1)|0</DataType>
+    </column>
+    <column id="111" parent="18" name="czy">
+      <Position>8</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="112" parent="18" name="dh">
+      <Position>9</Position>
+      <DataType>varchar(15)|0</DataType>
+    </column>
+    <column id="113" parent="18" name="rq">
+      <Position>10</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="114" parent="18" name="sl">
+      <Position>11</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="115" parent="18" name="wz">
+      <Position>12</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="116" parent="18" name="zl">
+      <Position>13</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <index id="117" parent="18" name="FKavy5f7kah0yt4r7al68s6haky">
+      <ColNames>cpid</ColNames>
+    </index>
+    <key id="118" parent="18" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="119" parent="18" name="FK_Reference_21">
+      <ColNames>cpid</ColNames>
+      <RefSchemaName>xinsd</RefSchemaName>
+      <RefTableName>cplb</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="120" parent="18" name="FKavy5f7kah0yt4r7al68s6haky">
+      <ColNames>cpid</ColNames>
+      <RefSchemaName>xinsd</RefSchemaName>
+      <RefTableName>cplb</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="121" parent="18" name="FKkycwrsoncjm14s0f6wtqpas4n">
+      <ColNames>cpid</ColNames>
+      <RefSchemaName>xinsd</RefSchemaName>
+      <RefTableName>cplb</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="122" parent="19" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="123" parent="19" name="gg">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="124" parent="19" name="mz">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="125" parent="19" name="xh">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="126" parent="19" name="dw_id">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="127" parent="19" name="FK1marjm0eh8qar0wyr7feqyvy2">
+      <ColNames>dw_id</ColNames>
+    </index>
+    <key id="128" parent="19" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="129" parent="19" name="FK1marjm0eh8qar0wyr7feqyvy2">
+      <ColNames>dw_id</ColNames>
+      <RefSchemaName>xinsd</RefSchemaName>
+      <RefTableName>dw</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="130" parent="20" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="131" parent="20" name="ddbh">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="132" parent="20" name="ddrq">
+      <Position>3</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="133" parent="20" name="dhrq">
+      <Position>4</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="134" parent="20" name="bz">
+      <Position>5</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="135" parent="20" name="bc_id">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="136" parent="20" name="gk_id">
+      <Position>7</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="137" parent="20" name="je">
+      <Position>8</Position>
+      <DataType>decimal(20)|0</DataType>
+    </column>
+    <column id="138" parent="20" name="jq">
+      <Position>9</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="139" parent="20" name="jsfsid">
+      <Position>10</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="140" parent="20" name="user_id">
+      <Position>11</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="141" parent="20" name="lc_id">
+      <Position>12</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="142" parent="20" name="FKbhvbyieilnahgsebqn0wsakxu">
+      <ColNames>gk_id</ColNames>
+    </index>
+    <index id="143" parent="20" name="FKbr4a78hsp7cuxbfwawbxxoi5">
+      <ColNames>user_id</ColNames>
+    </index>
+    <index id="144" parent="20" name="FKeqsmwh31m5htsn6bpeb6p5s1m">
+      <ColNames>bc_id</ColNames>
+    </index>
+    <index id="145" parent="20" name="dd_lc_fk_idx">
+      <ColNames>lc_id</ColNames>
+    </index>
+    <key id="146" parent="20" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="147" parent="20" name="FKeqsmwh31m5htsn6bpeb6p5s1m">
+      <ColNames>bc_id</ColNames>
+      <RefSchemaName>xinsd</RefSchemaName>
+      <RefTableName>bclb</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="148" parent="20" name="FKbhvbyieilnahgsebqn0wsakxu">
+      <ColNames>gk_id</ColNames>
+      <RefSchemaName>xinsd</RefSchemaName>
+      <RefTableName>gk</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="149" parent="20" name="FKbr4a78hsp7cuxbfwawbxxoi5">
+      <ColNames>user_id</ColNames>
+      <RefSchemaName>xinsd</RefSchemaName>
+      <RefTableName>user</RefTableName>
+      <RefColNames>ID</RefColNames>
+    </foreign-key>
+    <foreign-key id="150" parent="20" name="FKiko0bit3puf9rjiemvd85vu7t">
+      <ColNames>lc_id</ColNames>
+      <RefSchemaName>xinsd</RefSchemaName>
+      <RefTableName>lc</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="151" parent="20" name="dd_lc_fk">
+      <ColNames>lc_id</ColNames>
+      <RefSchemaName>xinsd</RefSchemaName>
+      <RefTableName>lc</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="152" parent="21" name="dds_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="153" parent="21" name="cplbs_id">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="154" parent="21" name="sl">
+      <Position>3</Position>
+      <Comment>数量</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="155" parent="21" name="bj">
+      <Position>4</Position>
+      <Comment>报价</Comment>
+      <DataType>decimal(10)|0</DataType>
+    </column>
+    <index id="156" parent="21" name="FKpibjememqkd8loeyv81udy5it">
+      <ColNames>cplbs_id</ColNames>
+    </index>
+    <key id="157" parent="21" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>dds_id
+cplbs_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="158" parent="21" name="FKduid59vjdmr7gi2f395e7qsg8">
+      <ColNames>dds_id</ColNames>
+      <RefSchemaName>xinsd</RefSchemaName>
+      <RefTableName>dd</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="159" parent="21" name="FKpibjememqkd8loeyv81udy5it">
+      <ColNames>cplbs_id</ColNames>
+      <RefSchemaName>xinsd</RefSchemaName>
+      <RefTableName>cplb</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="160" parent="22" name="ID">
+      <Position>1</Position>
+      <DataType>int(11) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="161" parent="22" name="PID">
+      <Position>2</Position>
+      <DataType>varchar(40)|0</DataType>
+    </column>
+    <column id="162" parent="22" name="DM">
+      <Position>3</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="163" parent="22" name="MC">
+      <Position>4</Position>
+      <DataType>varchar(40)|0</DataType>
+    </column>
+    <column id="164" parent="22" name="TYPE">
+      <Position>5</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="165" parent="22" name="CZYBH">
+      <Position>6</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="166" parent="22" name="BMBH">
+      <Position>7</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="167" parent="22" name="JBBH">
+      <Position>8</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="168" parent="22" name="CZSJ">
+      <Position>9</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <key id="169" parent="22" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="170" parent="23" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="171" parent="23" name="mc">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <key id="172" parent="23" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="173" parent="24" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="174" parent="24" name="pid">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="175" parent="24" name="name">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="176" parent="24" name="url">
+      <Position>4</Position>
+      <DataType>varchar(200)|0</DataType>
+    </column>
+    <column id="177" parent="24" name="title">
+      <Position>5</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="178" parent="24" name="target">
+      <Position>6</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="179" parent="24" name="ord">
+      <Position>7</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="180" parent="24" name="BMBH">
+      <Position>8</Position>
+      <Comment>部门编号</Comment>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="181" parent="24" name="JB">
+      <Position>9</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="182" parent="24" name="leaf">
+      <Position>10</Position>
+      <DataType>varchar(1)|0</DataType>
+    </column>
+    <key id="183" parent="24" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="184" parent="25" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="185" parent="25" name="frdb">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="186" parent="25" name="sh">
+      <Position>3</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="187" parent="25" name="bc_id">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="188" parent="25" name="dh">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="189" parent="25" name="dw">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="190" parent="25" name="dz">
+      <Position>7</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="191" parent="25" name="gkdh">
+      <Position>8</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="192" parent="25" name="gkdw">
+      <Position>9</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="193" parent="25" name="gkdz">
+      <Position>10</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="194" parent="25" name="gkxm">
+      <Position>11</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <index id="195" parent="25" name="FKcidqqk4u2jjy76g77rxv8ok5n">
+      <ColNames>bc_id</ColNames>
+    </index>
+    <key id="196" parent="25" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="197" parent="25" name="FKcidqqk4u2jjy76g77rxv8ok5n">
+      <ColNames>bc_id</ColNames>
+      <RefSchemaName>xinsd</RefSchemaName>
+      <RefTableName>bclb</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="198" parent="26" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="199" parent="26" name="roleid">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="200" parent="26" name="rolename">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <key id="201" parent="26" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="202" parent="27" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="203" parent="27" name="roleid">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="204" parent="27" name="funid">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="205" parent="27" name="bmid">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="206" parent="27" name="name">
+      <Position>5</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="207" parent="27" name="rolename">
+      <Position>6</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="208" parent="27" name="mc">
+      <Position>7</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <key id="209" parent="27" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="210" parent="28" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="211" parent="28" name="mc">
+      <Position>2</Position>
+      <Comment>流程名称</Comment>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <key id="212" parent="28" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="213" parent="29" name="ID">
+      <Position>1</Position>
+      <DataType>int(11) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="214" parent="29" name="XH">
+      <Position>2</Position>
+      <Comment>序号</Comment>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="215" parent="29" name="MC">
+      <Position>3</Position>
+      <Comment>流程名称</Comment>
+      <DataType>varchar(40)|0</DataType>
+    </column>
+    <column id="216" parent="29" name="ZT">
+      <Position>4</Position>
+      <Comment>状态</Comment>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="217" parent="29" name="MK">
+      <Position>5</Position>
+      <Comment>模块</Comment>
+      <DataType>varchar(40)|0</DataType>
+    </column>
+    <column id="218" parent="29" name="CZYBH">
+      <Position>6</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="219" parent="29" name="BMBH">
+      <Position>7</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="220" parent="29" name="JBBH">
+      <Position>8</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="221" parent="29" name="CZSJ">
+      <Position>9</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <key id="222" parent="29" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="223" parent="30" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="224" parent="30" name="bs">
+      <Position>2</Position>
+      <DataType>tinyint(1)|0</DataType>
+    </column>
+    <column id="225" parent="30" name="zl">
+      <Position>3</Position>
+      <DataType>decimal(15)|0</DataType>
+    </column>
+    <column id="226" parent="30" name="sl">
+      <Position>4</Position>
+      <DataType>decimal(15)|0</DataType>
+    </column>
+    <column id="227" parent="30" name="rq">
+      <Position>5</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="228" parent="30" name="wz">
+      <Position>6</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="229" parent="30" name="dh">
+      <Position>7</Position>
+      <DataType>varchar(15)|0</DataType>
+    </column>
+    <column id="230" parent="30" name="mjsm">
+      <Position>8</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="231" parent="30" name="mjzt">
+      <Position>9</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="232" parent="30" name="czy">
+      <Position>10</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="233" parent="30" name="mjlb_id">
+      <Position>11</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="234" parent="30" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="235" parent="31" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="236" parent="31" name="mc">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="237" parent="31" name="cllx">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="238" parent="31" name="sm">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="239" parent="31" name="dw_id">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="240" parent="31" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="241" parent="32" name="roleid">
+      <Position>1</Position>
+      <DataType>varchar(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="242" parent="32" name="rolename">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="243" parent="32" name="ID">
+      <Position>3</Position>
+      <DataType>int(4)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <index id="244" parent="32" name="roleid">
+      <ColNames>roleid</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="245" parent="32" name="roleid_2">
+      <ColNames>roleid</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="246" parent="32" name="roleid_3">
+      <ColNames>roleid</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="247" parent="32" name="UKcd3lrb910s6m6fsksirr1vs1w">
+      <ColNames>roleid</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="248" parent="32" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="249" parent="32" name="UKcd3lrb910s6m6fsksirr1vs1w">
+      <ColNames>roleid</ColNames>
+      <UnderlyingIndexName>UKcd3lrb910s6m6fsksirr1vs1w</UnderlyingIndexName>
+    </key>
+    <key id="250" parent="32" name="roleid">
+      <ColNames>roleid</ColNames>
+      <UnderlyingIndexName>roleid</UnderlyingIndexName>
+    </key>
+    <key id="251" parent="32" name="roleid_2">
+      <ColNames>roleid</ColNames>
+      <UnderlyingIndexName>roleid_2</UnderlyingIndexName>
+    </key>
+    <key id="252" parent="32" name="roleid_3">
+      <ColNames>roleid</ColNames>
+      <UnderlyingIndexName>roleid_3</UnderlyingIndexName>
+    </key>
+    <column id="253" parent="33" name="id">
+      <Position>1</Position>
+      <DataType>int(11) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="254" parent="33" name="roleid">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="255" parent="33" name="bmid">
+      <Position>3</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="256" parent="33" name="funid">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="257" parent="33" name="idx_rolesfunctions_funid">
+      <ColNames>funid</ColNames>
+    </index>
+    <index id="258" parent="33" name="idx_rolesfunctions_roleid">
+      <ColNames>roleid</ColNames>
+    </index>
+    <key id="259" parent="33" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="260" parent="34" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="261" parent="34" name="roleid">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="262" parent="34" name="userid">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="263" parent="34" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="264" parent="35" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="265" parent="35" name="tm">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="266" parent="35" name="zt">
+      <Position>3</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <key id="267" parent="35" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="268" parent="36" name="ID">
+      <Position>1</Position>
+      <DataType>int(11) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="269" parent="36" name="BM">
+      <Position>2</Position>
+      <Comment>表名</Comment>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="270" parent="36" name="CONTENT">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="271" parent="36" name="SQLSENTENCE">
+      <Position>4</Position>
+      <Comment>sql</Comment>
+      <DataType>text|0</DataType>
+    </column>
+    <key id="272" parent="36" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="273" parent="37" name="ID">
+      <Position>1</Position>
+      <Comment>编号</Comment>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="274" parent="37" name="UID">
+      <Position>2</Position>
+      <Comment>用户编号</Comment>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="275" parent="37" name="UNAME">
+      <Position>3</Position>
+      <Comment>用户账号</Comment>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="276" parent="37" name="UPASSWORD">
+      <Position>4</Position>
+      <Comment>密码</Comment>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="277" parent="37" name="JB">
+      <Position>5</Position>
+      <Comment>级别</Comment>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="278" parent="37" name="XM">
+      <Position>6</Position>
+      <Comment>姓名</Comment>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="279" parent="37" name="BM">
+      <Position>7</Position>
+      <Comment>部门</Comment>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="280" parent="37" name="SQYM">
+      <Position>8</Position>
+      <Comment>授权页面</Comment>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <index id="281" parent="37" name="UID">
+      <ColNames>UID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="282" parent="37" name="UID_2">
+      <ColNames>UID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="283" parent="37" name="UKoiygglltjtbk57kmsscip9gam">
+      <ColNames>UNAME</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="284" parent="37" name="UKspyxllt2fwt14vyle56pqr1qy">
+      <ColNames>UID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="285" parent="37" name="UNAME">
+      <ColNames>UNAME</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="286" parent="37" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="287" parent="37" name="UID">
+      <ColNames>UID</ColNames>
+      <UnderlyingIndexName>UID</UnderlyingIndexName>
+    </key>
+    <key id="288" parent="37" name="UID_2">
+      <ColNames>UID</ColNames>
+      <UnderlyingIndexName>UID_2</UnderlyingIndexName>
+    </key>
+    <key id="289" parent="37" name="UKspyxllt2fwt14vyle56pqr1qy">
+      <ColNames>UID</ColNames>
+      <UnderlyingIndexName>UKspyxllt2fwt14vyle56pqr1qy</UnderlyingIndexName>
+    </key>
+    <key id="290" parent="37" name="UKoiygglltjtbk57kmsscip9gam">
+      <ColNames>UNAME</ColNames>
+      <UnderlyingIndexName>UKoiygglltjtbk57kmsscip9gam</UnderlyingIndexName>
+    </key>
+    <key id="291" parent="37" name="UNAME">
+      <ColNames>UNAME</ColNames>
+      <UnderlyingIndexName>UNAME</UnderlyingIndexName>
+    </key>
+    <column id="292" parent="38" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="293" parent="38" name="dh">
+      <Position>2</Position>
+      <DataType>varchar(15)|0</DataType>
+    </column>
+    <column id="294" parent="38" name="gph">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="295" parent="38" name="jh">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="296" parent="38" name="ph">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="297" parent="38" name="rq">
+      <Position>6</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="298" parent="38" name="sl">
+      <Position>7</Position>
+      <DataType>decimal(15)|0</DataType>
+    </column>
+    <column id="299" parent="38" name="zl">
+      <Position>8</Position>
+      <DataType>decimal(15)|0</DataType>
+    </column>
+    <column id="300" parent="38" name="wz">
+      <Position>9</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="301" parent="38" name="bs">
+      <Position>10</Position>
+      <DataType>tinyint(1)|0</DataType>
+    </column>
+    <column id="302" parent="38" name="rlh">
+      <Position>11</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="303" parent="38" name="scrq">
+      <Position>12</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="304" parent="38" name="czy">
+      <Position>13</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="305" parent="38" name="yllb_id">
+      <Position>14</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="306" parent="38" name="bh">
+      <Position>15</Position>
+      <DataType>varchar(25)|0</DataType>
+    </column>
+    <key id="307" parent="38" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="308" parent="39" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="309" parent="39" name="ylcz">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="310" parent="39" name="ylgg">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="311" parent="39" name="ylmz">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="312" parent="39" name="dw_id">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="313" parent="39" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

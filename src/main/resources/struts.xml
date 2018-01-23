@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="XinSD" namespace="/" extends="json-default">
+		<action name="list" method="list" class="json.studentAction">
+        <result type="json" name="list_success">
+        </result>
+    </action>
+	</package>
+	<constant name="struts.objectFactory " value="spring"></constant>
+	<constant name="struts.devMode" value="false" />                                                                     <!-- 开发模式 -->
+	<constant name="struts.i18n.encoding" value="UTF-8" />                                                       <!-- Web运用编码 -->
+<constant name="struts.convention.result.path" value="/"/>
+	<constant name="struts.convention.action.name.separator"
+		value="_" />                     <!-- Action类名分隔符 -->
+	<!--<constant name="struts.convention.classes.reload" value="false" /> &lt;!&ndash; 
+		convention类重加载 &ndash;&gt; -->
+	<!-- <constant name="struts.convention.action.suffix" value="Action" /> -->                       <!-- Action后缀名 -->
+	<!--<constant name="struts.action.extension" value="action,do,html,htm,php,aspx" 
+		/> &lt;!&ndash; Action扩展名 &ndash;&gt; -->
+	<constant name="struts.convention.package.locators" value="action" />       <!-- 搜索Action资源的包路径 -->
+</struts>

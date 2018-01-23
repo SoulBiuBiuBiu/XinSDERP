@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>绍兴图书馆志愿者管理平台-注册</title>
+<link rel="stylesheet" type="text/css"
+	href="__STATIC__/easyui/themes/gms/easyui.css">
+<link rel="stylesheet" type="text/css" href="__CSS__/main.css">
+<link rel="stylesheet" type="text/css"
+	href="__STATIC__/iconfont/iconfont.css">
+<script type="text/javascript" src="__STATIC__/jquery.min.js"></script>
+<script type="text/javascript"
+	src="__STATIC__/easyui/jquery.easyui.min.js"></script>
+
+
+</head>
+<body id="layout_main" class="easyui-layout">
+<div title="---志愿者注册---" class="easyui-panel"
+	data-options="closable:false">
+<form id="RegisterSubmitFrom" class="update_from" method="post"
+	data-options="fit:true,border:false,novalidate:true">
+
+<table>
+	<tr>
+		<th>账号 : <span></span></th>
+		<td><input id="reg_name" name="username" value="" type="text"
+			class="easyui-textbox" data-options="required:true">
+		<div id="reg_nameTip"></div>
+		</td>
+		<th>真实姓名: <span></span></th>
+		<td><input id="reg_nickname" name="nickname" value="" type="text"
+			class="easyui-textbox" data-options="required:true"></td>
+	</tr>
+	<tr>
+		<th>密码: <span></span></th>
+		<td><input name="password" value="" type="text"
+			class="easyui-textbox" data-options="required:true,prompt:'请输入密码。'"></td>
+		<th>身份证号码 : <span></span></th>
+		<td><input name="idcard" value="" id="idcard" type="text"
+			class="easyui-textbox"
+			data-options="prompt:'请输入正确的身份证号码。',validType:'idcard',
+        onChange: function(value){
+         if(value.length ==18){
+         var myDate=new Date();
+         var year = myDate.getFullYear();
+         var brithday = value.substring(6,10);
+         var age = year-brithday;
+         $('#RegisterSubmitFrom').form('load', {
+            age: age
+        });
+         }
+        }"></td>
+	</tr>
+	<tr>
+		<th>联系方式 : <span></span></th>
+		<td><input name="telephone" value="" type="text"
+			class="easyui-textbox"
+			data-options="prompt:'请输入正确的手机号码。',validType:'phoneNum'"></td>
+		<th>年龄 : <span></span></th>
+		<td><input name="age" id='age' value="" type="text"
+			class="easyui-textbox" readonly="true"></td>
+	</tr>
+	<tr>
+		<th>注册类型 : <span></span></th>
+		<td><select name="group_id" class="easyui-combobox"
+			data-options="value:'5',multiple:false,required:false,editable:false">
+			<option value="5">个人</option>
+			<option value="4">团体</option>
+		</select></td>
+		<th>团队人数:</th>
+		<td><input name="num" value="" type="text" class="easyui-textbox"
+			data-options="required:false"><span>团队志愿者需要填写团队人数，个人志愿者无需填写</span></td>
+	</tr>
+	<tr>
+		<th colspan="4">备注 : <span>填写你参加过的志愿者的工作经历等信息，能参加多少小时图书馆的志愿者服务</span></th>
+	</tr>
+	<tr>
+		<td colspan="4"><input name="remark" value="" type="text"
+			class="easyui-textbox" data-options="required:false,multiline:true"
+			style="width: 86%; height: 50px;"></td>
+	</tr>
+	<tr>
+		<th colspan="4">绍兴图书馆志愿者条款 : <span></span></th>
+	</tr>
+	<tr>
+		<td colspan="4"><span
+			style="border: 1px solid #ccc; display: block; width: 85%; padding: 5px; font-size: 15px;">第一条
+		为倡导奉献、友爱、互助、进步的志愿服务精神，鼓励、推动和规范志愿服务活动的开展，维护志愿者权益，促进图书馆事业发展，根据本馆实际情况，制定本办法。<br />
+		第二条 志愿者是能够自觉自愿参与图书馆公益服务工作，不计报酬，基于良知、信念和责任，围绕图书馆工作项目为社会和读者提供服务和帮助的各界人士。<br />
+		第三条 综合办公室负责日常志愿者的招募和考核，各使用部门负责志愿者的培训和日常管理等事务。<br />
+		第四条 本办法适用于在本馆区域内开展或者发起的有组织的志愿服务活动。<br />
+		第五条 参加志愿者服务工作总计不得少于12小时。</span> <input type="checkbox" id="agree"
+			style="width: 20px" />同意</td>
+	</tr>
+	<tr>
+		<th align="center" colspan="4"><a class="easyui-linkbutton"
+			href="JavaScript:void(0);" onclick="submitForm()"
+			data-options="iconCls:'iconfont icon-add'" id="btnSubmit"
+			style="display: none; width: 80px;"> <span
+			style="font-size: 14px; font-weight: 600;">注册</span></a></th>
+	</tr>
+</table>
+
+</form>
+</div>
+</body>
+</html>
+
+<script>
+ $(function(){
+	 
+     $("#agree").click(function(){    	 
+    	 var chkValue =$(this).prop("checked");
+    	if(chkValue)
+    	   $("#btnSubmit").css('display','block'); 
+    	else{
+    		$("#btnSubmit").css('display','none'); 
+    	}
+	 });
+     $('#idcard').change(function(){
+    	 console.log($(this).val()+'dddddddddddd');
+     })
+     $.extend($.fn.validatebox.defaults.rules, {    
+    	    phoneNum: { //验证手机号   
+    	        validator: function(value, param){ 
+    	         return /^1[3-8]+\d{9}$/.test(value);
+    	        },    
+    	        message: '请输入正确的手机号码。'   
+    	    },
+    	    
+    	    telNum:{ //既验证手机号，又验证座机号
+    	      validator: function(value, param){ 
+    	          return /(^(0[0-9]{2,3}\-)?([2-9][0-9]{6,7})+(\-[0-9]{1,4})?$)|(^((\(\d{3}\))|(\d{3}\-))?(1[358]\d{9})$)/.test(value);
+    	         },    
+    	         message: '请输入正确的电话号码。' 
+    	    }, 
+    	    
+    	    ageNum: { //验证年龄
+    	        validator: function(value, param){ 
+    	         return /^[1-9]+\d{1}$/.test(value);
+    	        },    
+    	        message: '请输入正确的年龄。'   
+    	    },
+    	    idcard: { //验证身份证号码   
+    	        validator: function(value, param){ 
+    	         return /^[1-9]([0-9]{14}|[0-9]{17})$/.test(value);
+    	        },    
+    	        message: '请输入正确的身份证号码。'   
+    	    },
+    	});
+ })
+ 
+ 
+ function submitForm(){
+	 $.messager.confirm('确定操作', '您正在要注册志愿者吗？,需要确保工作12小时', function (flag) {
+			if (flag){
+				if($('#age').val()<12 ||$('#age').val()> 60 ){
+					$.messager.show({title:'错误提示',msg:'您的年龄不符合要求,谢谢您的参与!',timeout:2000,showType:'slide'});
+				}
+				else
+			$('#RegisterSubmitFrom').form('submit',{
+				url:"{:U('regHandle')}",
+				onSubmit:function(){
+					return $(this).form('enableValidation').form('validate');
+				},
+				success:function(data){
+					$.messager.alert('Info', data, 'info');
+				}
+			});
+			}
+		});
+ }
+</script>
